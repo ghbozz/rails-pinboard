@@ -16,7 +16,7 @@ class PinsController < ApplicationController
     @pin = Pin.new(pin_params)
     @pin.user = current_user
     if @pin.save
-      redirect_to pin_path(@pin)
+      redirect_to pin_path(@pin), notice: 'Success'
     else
       render :new
     end

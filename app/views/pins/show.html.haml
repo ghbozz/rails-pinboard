@@ -1,5 +1,5 @@
 .container
-  %h1 Pin Show Placeholder
-  %h3= @pin.title
+  = image_tag @pin.image.url(:medium)
+  %h2= @pin.title
   %p= @pin.description
   %p= "submitted by #{@pin.user.email}"

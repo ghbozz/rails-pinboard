@@ -1,0 +1,12 @@
+  <div class="grid">
+    <% @pins.each do |pin| %>
+    <figure class="effect-sarah">
+      <%= image_tag pin.image.url(:medium) %>
+      <figcaption>
+        <h2><%= pin.title %></h2>
+        <p><%= pin.description.chars.first(50).join('') %></p>
+        <a href="#">View more</a>
+      </figcaption>
+    </figure>
+    <% end %>
+  </div>

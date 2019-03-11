@@ -17,6 +17,8 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'haml'
 gem "paperclip", "~> 6.0.0"
+gem 'masonry-rails'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

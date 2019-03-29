@@ -1,5 +1,5 @@
-.container
-  = image_tag @pin.image.url(:medium)
+.container-custom
+  = image_tag @pin.image.url(:medium), class: "show-img"
   %h2= @pin.title
   %p= @pin.description
   %p= "submitted by #{@pin.user.email.split('@')[0]}"

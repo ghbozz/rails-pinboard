@@ -2,4 +2,4 @@
   = image_tag @pin.image.url(:medium)
   %h2= @pin.title
   %p= @pin.description
-  %p= "submitted by #{@pin.user.email}"
+  %p= "submitted by #{@pin.user.email.split('@')[0]}"
